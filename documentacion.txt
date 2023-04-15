@@ -1,0 +1,59 @@
+1 Crear el entorno de trabajo con React-vite:
+
+1.1= npm create vite@latest <nombre-de-mi-proyecto>
+
+1.2= ✔ Project name: … vite-project
+? Select a framework: › - Use arrow-keys. Return to submit.
+    Vanilla
+    Vue
+❯   React
+    Preact
+    Lit
+    Svelte
+
+1.3= ? Select a variant: › - Use arrow-keys. Return to submit.
+❯   JavaScript
+    TypeScript
+
+1.4= Scaffolding project in /Users/carlosazaustre/dev/vite-project...
+
+Done. Now run:
+
+  cd vite-project
+  npm install
+  npm run dev
+
+1.5= $ cd <nombre-de-mi-proyecto>
+     $ npm install
+
+1.6= $ npm run dev
+
+  VITE v3.1.8 ready in 396 ms
+
+  > Local: http://localhost:5173/
+  > Network: use `--host` to expose
+
+2 Instalamos framework de Styled-component
+
+2.1= npm install --save styled-components
+
+2.2= npm i --save-dev @types/styled-components
+
+3 Instalamos el react-router-dom para crear las rutas:
+
+3.1= npm install react-router-dom
+
+3.2 Creamos las carpetas de PAGES, COMPONENTS Y ROUTER, dentro de Router creamos el fichero AppRouter.tsx 
+y ahi creamos las rutas dentro envueltas por el BrowserRouter y luego Routes.
+
+4 Borramos el contenido del App.tsx y hemos sustuido por el <AppRouter/>
+
+5 Comentamos los estilos que venian por defecto como (import './App.css') de todos los ficheros
+
+6 Creamos el layout dentro de la carpeta components el cual hemos sustituido el <div></div> por un <main></main>
+y dentro del <main> hemos agregado el <Outlet/> Que viene hacer el que va a renderizar solo los elementos del main
+
+7 Creamos el NavTop y el Footer y hemos añadido estos componentes en el layout
+
+8 Hemos creado el fichero Global.style.tsx para establecer los estilos globales y para poder renderizar los estilos globales
+hemos tenido que añadir el <GlobalStyles/> en App.tsx
