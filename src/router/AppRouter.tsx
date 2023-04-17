@@ -12,10 +12,11 @@ const AppRouter = (props: Props) => {
     <>
     <BrowserRouter>   
         <Routes>
-            <Route element={<Layout />} />
+            <Route element={<Layout />} >
             <Route path="/" element={<Homepage />} />
             <Route path="/discover" element={<DiscoverPage />} />
             <Route path="/join" element={<Joinpage />} />
+            </Route>
         </Routes>
     </BrowserRouter>
     </>

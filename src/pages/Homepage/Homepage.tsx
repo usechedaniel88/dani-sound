@@ -1,4 +1,5 @@
 import React from 'react'
+import NavTop from '../../components/NavTop/NavTop'
 
 type Props = {}
 

@@ -1,4 +1,4 @@
-1 Crear el entorno de trabajo con React-vite:
+* 1 Crear el entorno de trabajo con React-vite:
 
 1.1= npm create vite@latest <nombre-de-mi-proyecto>
 
@@ -33,27 +33,47 @@ Done. Now run:
   > Local: http://localhost:5173/
   > Network: use `--host` to expose
 
-2 Instalamos framework de Styled-component
+* 2 Instalamos framework de Styled-component
 
 2.1= npm install --save styled-components
 
 2.2= npm i --save-dev @types/styled-components
 
-3 Instalamos el react-router-dom para crear las rutas:
+* 3 Instalamos el react-router-dom para crear las rutas:
 
 3.1= npm install react-router-dom
 
 3.2 Creamos las carpetas de PAGES, COMPONENTS Y ROUTER, dentro de Router creamos el fichero AppRouter.tsx 
 y ahi creamos las rutas dentro envueltas por el BrowserRouter y luego Routes.
 
-4 Borramos el contenido del App.tsx y hemos sustuido por el <AppRouter/>
+* 4 Borramos el contenido del App.tsx y hemos sustuido por el <AppRouter/>
 
-5 Comentamos los estilos que venian por defecto como (import './App.css') de todos los ficheros
+* 5 Comentamos los estilos que venian por defecto como (import './App.css') de todos los ficheros
 
-6 Creamos el layout dentro de la carpeta components el cual hemos sustituido el <div></div> por un <main></main>
+* 6 Creamos el layout dentro de la carpeta components el cual hemos sustituido el <div></div> por un <main></main>
 y dentro del <main> hemos agregado el <Outlet/> Que viene hacer el que va a renderizar solo los elementos del main
 
-7 Creamos el NavTop y el Footer y hemos añadido estos componentes en el layout
+6.1= Luego en la ruta importante que <Route element={<Layout />} > engloble todas las rutas y cierre  </Route> 
 
-8 Hemos creado el fichero Global.style.tsx para establecer los estilos globales y para poder renderizar los estilos globales
+* 7 Creamos el NavTop y el Footer y hemos añadido estos componentes en el layout
+
+* 8 Hemos creado el fichero Global.style.tsx para establecer los estilos globales y para poder renderizar los estilos globales
 hemos tenido que añadir el <GlobalStyles/> en App.tsx
+
+* 9 Crear el repositorio: desde la web de github creamos un nuevo repositorio en https://github.com. Le damos nombre, descripción, 
+seleccionamos si va a ser un proyecto publico o privado si es el caso, y dejamos el check de crear README sin marcar. Le damos a 
+crear repositorio y con esto ya tenemos el repositorio donde alojaremos nuestro proyecto.
+
+9.1= Desde la terminal ejecutamos los siguiente comandos (Los mismos que nos dan en el github, luego de crear el repositorio): 
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+git push -u origin master
+
+* 10
